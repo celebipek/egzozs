@@ -1,0 +1,157 @@
+.campaigns-and-announcements {
+    background-color: #F7F8FC;
+    padding: 60px 0;
+}
+
+.campaigns-and-announcements-title {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "DMSans-Bold";
+    color: #021633;
+}
+
+.campaigns-and-announcements-view-all {
+    font-family: "DMSans-Bold";
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    font-style: normal;
+    color: #24694f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.campaigns-and-announcements-view-all:hover {
+    color: #1aaf81;
+}
+
+.campaigns-and-announcements-image {
+    width: 100%;
+    border-radius: 16px;
+    filter: drop-shadow(-4px 6.928203105926514px 30px rgba(134,139,149,0.15));
+}
+
+.campaigns-and-announcements-icon {
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(-4px 6.928203105926514px 30px rgba(134,139,149,0.15));
+    margin-left: 50px;
+}
+
+.campaigns-and-announcements-description {
+    font-family: "DMSans-Bold";
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 2rem;
+    font-style: normal;
+    color: #021633;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.campaigns-and-announcements-shipping-title {
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    font-style: normal;
+    color: #021633;
+    margin-bottom: 16px;
+}
+
+.campaigns-and-announcements-shipping-text {
+    font-family: "DMSans-Regular";
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2rem;
+    font-style: normal;
+    color: #021633;
+    margin-bottom: 24px;
+}
+
+.campaigns-and-announcements-buy-now {
+    font-size: 1rem;
+    background-color: #F68712;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 28px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    display: block;
+    max-width: 200px;
+}
+
+.campaigns-and-announcements-buy-now:hover {
+    color: #FFFFFF;
+    background-color: #e64040;
+    text-decoration: none;
+}
+
+.campaigns-and-announcements-icon.active {
+    background-color: orange;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .campaigns-and-announcements {
+        padding: 30px 0;
+    }
+
+    .campaigns-and-announcements-title, .campaigns-and-announcements-view-all {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .campaigns-and-announcements-image{
+        margin-bottom: 20px;
+    }
+    
+    .campaigns-and-announcements-title {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+    
+    .campaigns-and-announcements-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .campaigns-and-announcements-description {
+        font-size: 1rem;
+        height: 30px;
+        text-align: center;
+    }
+    .campaigns-and-announcements-shipping-title {
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .campaigns-and-announcements-buy-now {
+        padding: 5px 10px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .col-12.d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row > .col-md-2, 
+    .row > .col-md-9 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

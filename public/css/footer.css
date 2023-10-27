@@ -1,0 +1,91 @@
+.footer-section {
+    position: relative;
+    background-color: #ffffff;
+    color: #021633;
+    padding: 20px 0;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #021633;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #021633;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #F68712;
+}
+
+.footer-section p {
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    width: 150px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #034e14;
+}
+
+@media (max-width: 768px) {
+    .footer-collapsible {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .footer-collapsible::after {
+        content: '\002B';
+        font-size: 20px;
+        color: #034e14;
+    }
+
+    .footer-collapsible.active::after {
+        content: '\2212';
+    }
+
+    .footer-collapsible.active + .footer-content {
+        max-height: 300px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

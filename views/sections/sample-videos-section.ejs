@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sample-videos-section.css">
+</head>
+
+<section class="small-tutorials py-5">
+    <div class="container">
+        <div class="row small-tutorials-titles-group mb-4 d-none d-md-flex">
+            <div class="col-md-6">
+                <h2 class="small-tutorials-tutorial-title">Aracınızı Nasıl Daha <br> Verimli Kılarsınız?</h2>
+            </div>
+            <div class="col-md-6">
+                <h2 class="small-tutorials-tutorial-title">Katalitik Konverter Nedir?</h2>
+            </div>
+        </div>
+
+        <div class="row small-tutorials-subtitles-group mb-4 d-none d-md-flex">
+            <div class="col-md-6">
+                <p class="small-tutorials-tutorial-subtitle">
+                    Bu videoda, egzoz sistemlerinin aracınız üzerindeki etkilerini, doğru egzoz<br>
+                    sistemini seçmenin önemini ve performans egzoz sistemlerinin avantajlarını<br>
+                    keşfedeceğiz.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="small-tutorials-tutorial-subtitle">
+                    Bu videoda, katalitik konverterlerin ne işe yaradığını ve aracınız için doğru<br>
+                    seçimi yapmanın püf noktalarını paylaşıyoruz.
+                </p>
+            </div>
+        </div>
+
+        <div class="d-md-none">
+            <h2 class="small-tutorials-tutorial-title">Aracınızı Nasıl Daha <br> Verimli Kılarsınız?</h2>
+            <p class="small-tutorials-tutorial-subtitle">
+                Bu videoda, egzoz sistemlerinin aracınız üzerindeki etkilerini, doğru egzoz<br>
+                sistemini seçmenin önemini ve performans egzoz sistemlerinin avantajlarını<br>
+                keşfedeceğiz.
+            </p>
+            <div class="small-tutorials-tutorial-video" onclick="toggleVideoPlayback(this)">
+                <video class="tutorial-video-element">
+                    <source src="/video/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+            <h2 class="small-tutorials-tutorial-title">Katalitik Konverter Nedir?</h2>
+            <p class="small-tutorials-tutorial-subtitle">
+                Bu videoda, katalitik konverterlerin ne işe yaradığını ve aracınız için doğru<br>
+                seçimi yapmanın püf noktalarını paylaşıyoruz.
+            </p>
+            <div class="small-tutorials-tutorial-video" onclick="toggleVideoPlayback(this)">
+                <video class="tutorial-video-element">
+                    <source src="/video/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+        </div>
+
+        <div class="row small-tutorials-videos-group d-none d-md-flex">
+            <div class="col-md-6">
+                <div class="small-tutorials-tutorial-video" onclick="toggleVideoPlayback(this)">
+                    <video class="tutorial-video-element">
+                        <source src="/video/example.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="small-tutorials-tutorial-video" onclick="toggleVideoPlayback(this)">
+                    <video class="tutorial-video-element">
+                        <source src="/video/example.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleVideoPlayback(element) {
+        const video = element.querySelector('video');
+        const icon = element.querySelector('.play-icon');
+        
+        if (video.paused) {
+            video.play();
+            icon.style.display = 'none';
+        } else {
+            video.pause();
+            icon.style.display = 'flex';
+        }
+    }
+</script>

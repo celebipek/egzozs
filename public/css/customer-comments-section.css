@@ -1,0 +1,122 @@
+.customer-comment-section {
+    background-color: #3A6AB9;
+    padding: 50px 0;
+}
+
+.customer-comment-section .section-title {
+    font-family: "DMSans-Bold";
+    font-size: 40px;
+    line-height: 32px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.card.customer-card {
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+}
+
+.user-info {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-align: center;
+}
+
+.user-info img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.user-info .user-name {
+    font-family: "DMSans-Bold";
+    font-size: 18px;
+    line-height: 32px;
+    color: #021633;
+    margin-top: 8px;
+}
+
+.comment-content .top-section {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.comment-content .rating i {
+    color: #FEB274;
+}
+
+.comment-content .rating span {
+    font-family: "DMSans-Bold";
+    font-size: 32px;
+    line-height: 32px;
+    color: #021633;
+}
+
+.comment-content .verified i{
+    color: #24694F;
+}
+
+.comment-content .verified span {
+    font-family: "DMSans-Regular";
+    font-size: 14px;
+    line-height: 24.5px;
+    color: #021633;
+}
+
+.comment-content .comment {
+    font-family: "DMSans-Regular";
+    font-size: 14px;
+    line-height: 24.5px;
+    color: #021633;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+
+    .card.customer-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    .user-info {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .comment-content .top-section {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .comment-content .rating, .comment-content .verified {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .comment-content .comment {
+        position: static;
+        left: auto;
+        transform: none;
+        text-align: left;
+        margin-top: 15px;
+        width: 100%;
+    }
+}

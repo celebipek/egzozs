@@ -1,0 +1,70 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/search-hero-section.css">
+</head>
+
+<section class="search-hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-8">
+                <h1 class="search-hero-section-title"> <span class="search-hero-section-highlight">Egzoz</span> Sistemlerinde <br>  Doğru Adres. </h1>
+                <p class="search-hero-section-subtitle">Yol arkadaşınız olarak, aracınızın her daim en</p>
+                <p class="search-hero-section-subtitle">iyi performansla çalışmasını sağlıyoruz.</p>
+                <div class="search-hero-section-search-container d-flex">
+                    <input type="text" placeholder="Aramak istediğiniz parçayı yazın..." class="search-hero-section-search-input form-control">
+                    <div class="search-hero-section-search-results">
+                        <!-- Backend Placeholder: burası AJAX, jQuery veya JavaScript aracılığı ile ilgili sonuçlar ile doldurulacak.
+                        Örneğin, jQuery ile yapmak istiyorsan:
+                        $(document).ready(function() {
+                            $(".search-hero-section-search-input").on("input", function() {
+                                var query = $(this).val();
+                                if (query.length > 2) { // En az 3 karakter girildiğinde arama yapılacak, bu değeri kendine göre değiştir.
+                                    $.ajax({
+                                        url: "/search", // Backend endpointine göre değiştir.
+                                        method: "GET",
+                                        data: { query: query },
+                                        success: function(data) {
+                                            var results = data.results; // Backendden dönen yapıya göre değiştir.
+                                            var resultsHtml = "";
+                                            for (var i = 0; i < results.length; i++) {
+                                                resultsHtml += '<div class="search-hero-section-result-item">' + results[i] + '</div>';
+                                            }
+                                            $(".search-hero-section-search-results").html(resultsHtml);
+                                        }
+                                    });
+                                }
+                            });
+                        });
+
+                        Senin için örnek bir backend tarafının kodunu da bırakayım.
+                        app.get('/search', function(req, res) {
+                            var query = req.query.query;
+                            // Veritabanından veya başka bir kaynaktan sonuçları getiriyoruz.
+                            // Örnek olarak statik bir liste döndürelim, burayı kendine göre değiştirirsin:
+                            var allResults = ["Örnek Sonuç 1", "Örnek Sonuç 2", "Örnek Sonuç 3", "Örnek Sonuç 4"];
+                            var results = allResults.filter(function(item) {
+                                return item.includes(query);
+                            });
+                            res.json({ results: results });
+                        });
+                        -->
+                        
+                        <!-- Eğer nasıl görüneceğini merak ediyorsan aşağıdaki kısımların commentini kaldırabilirsin. -->
+                        <!-- Benim tavsiyem paging eklemen ve her page'de 5 adet sonuç görüntülemen. -->
+                        <!-- <div class="search-hero-section-result-item">Örnek Arama Sonucu 1</div> -->
+                        <!-- <div class="search-hero-section-result-item">Örnek Arama Sonucu 2</div> -->
+                        <!-- <div class="search-hero-section-result-item">Örnek Arama Sonucu 3</div> -->
+                        <!-- <div class="search-hero-section-result-item">Örnek Arama Sonucu 4</div> -->
+                        <!-- <div class="search-hero-section-result-item">Örnek Arama Sonucu 5</div> -->
+
+                    </div>
+                    <button class="search-hero-section-search-btn btn"><i class="fas fa-search"></i></button> <!-- Bu butonun işlevini de kendine göre değiştirirsin. -->
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                <img src="/img/egzoz.png" alt="Egzoz Search Area Resim" class="search-hero-section-image img-fluid" loading = "lazy">
+            </div>
+        </div>
+    </div>
+</section>

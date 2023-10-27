@@ -1,0 +1,122 @@
+.top-selling-products {
+    padding: 2% 1%;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "DMSans-Bold";
+    color: #021633;
+}
+
+.view-all {
+    font-family: "DMSans-Bold";
+    font-size: 1em;
+    color: #24694f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.view-all:hover {
+    color: #1aaf81;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    /* filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16)); isteğe bağlı olarak açılabilir, resim altına gölge ekler */
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.product-item {
+    padding: 10px;
+}
+
+.product-title {
+    font-family: "DMSans-Bold";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-style: normal;
+    text-align: left;
+    color: #021633;
+    display: block;
+    text-decoration: none;
+    margin-top: 0;
+    transition: color 0.3s;
+    padding-left: 15px;
+}
+
+.product-title:hover {
+    color: #1aaf81;
+}
+
+.product-price {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 24px;
+    font-style: normal;
+    text-align: left;
+    color: #1aaf81;
+    margin-top: 2px;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+body .owl-carousel .owl-nav button.owl-prev, body .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: contain;
+}
+
+body .owl-carousel .owl-nav button.owl-prev {
+    left: -30px;
+    background-image: url('../img/left-arrow.png');
+}
+
+body .owl-carousel .owl-nav button.owl-next {
+    right: -30px;
+    background-image: url('../img/right-arrow.png');
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+    }
+    .product-title, .view-all {
+        font-size: 0.9em;
+    }
+    .product-price {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5em;
+    }
+    .product-title, .view-all {
+        font-size: 0.8em;
+    }
+    .product-price {
+        font-size: 1.2em;
+    }
+}

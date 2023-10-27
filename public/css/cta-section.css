@@ -1,0 +1,120 @@
+.cta-section {
+    margin: 200px auto 0 auto;
+    background-color: #3A6AB9;
+    padding: 50px 0;
+    position: relative;
+    max-width: 65%;
+    max-height: 250px;
+    border-radius: 15px;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 800px;
+}
+
+.cta-title {
+    font-family: "DMSans-Medium";
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 40px;
+    font-style: normal;
+    text-align: left;
+    color: #fefefe;
+    margin-bottom: 10px;
+}
+
+.cta-text {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #f68712;
+    color: #fefefe;
+    border-radius: 28px;
+    text-decoration: none;
+    transition: background 0.3s;
+    align-self: flex-start;
+}
+
+.cta-button:hover {
+    background: #e6750c;
+}
+
+.cta-image {
+    position: absolute;
+    left: 130px;
+    top: 0px;
+    transform: translateY(-50%);
+    max-width: 324px;
+    max-height: 498px;
+    margin-right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .cta-section {
+        margin: 50px auto;
+        max-width: 80%;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .cta-text {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 16px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-image {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+        max-width: 50%;
+        max-height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

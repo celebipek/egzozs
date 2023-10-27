@@ -1,0 +1,104 @@
+.header-section-hover-orange:hover {
+    color: #F68712 !important;
+}
+
+.header-section-logo {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.header-section-logo:hover {
+    transform: scale(1.05);
+}
+
+.header-section-divider {
+    color: #F68712;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    user-select: none;
+}
+
+.header-section-btn {
+    background-color: #F68712;
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.header-section-scale-hover:hover {
+    transform: scale(1.05);
+}
+
+.header-section-nav-item {
+    font-size: 1.0rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+.header-section-nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #F68712;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.header-section-nav-item:hover {
+    color: #F68712 !important;
+}
+
+.header-section-nav-item:hover::after {
+    width: 100%;
+}
+
+.header-section-nav {
+    margin-top: 20px;
+}
+
+.header-section-right-elements {
+    margin-top: 10px;
+}
+
+.header-section-line {
+    width: 2px;
+    height: 1.5rem;
+    background-color: #F68712;
+    display: inline-block;
+    margin-right: 2rem;
+    vertical-align: middle;
+}
+
+.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    z-index: 1000;
+}
+
+.mobile-nav a, .mobile-nav button {
+    color: #333;
+    font-size: 1.2rem;
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.mobile-nav a:hover, .mobile-nav button:hover {
+    color: #F68712;
+}
+
+@media (max-width: 768px) {
+    .header-section-nav, .header-section-right-elements, .header-section-divider {
+        display: none !important;;
+    }
+}
