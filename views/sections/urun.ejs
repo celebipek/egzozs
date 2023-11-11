@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - custom css link
+  -->
+   
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .similar {
+        /* border: 1px solid gray; */
+        width: 150px;
+        margin-right: 20px;
+        padding: 20px;
+        height: 200px;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .slick-prev:before {
+        content: "<";
+        color: black;
+        font-size: 25px;
+        font-weight: bolder;
+        position: absolute;
+        left: 0;
+      }
+
+      .slick-next:before {
+        content: ">";
+        color: black;
+        font-size: 25px;
+        font-weight: bolder;
+        position: absolute;
+        right: 0;
+      }
+    </style>
+
+    <title>
+      Egzozstore.com | En Ucuz Egzoz Fiyatları | En Ucuz Susturucu Fiyatları
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/urun.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <%- include('../partials/header') %>
+
+    <button
+      style="display: none"
+      class="nav-open-btn"
+      aria-label="open menu"
+      data-nav-toggler
+    >
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </button>
+    <button
+      style="display: none"
+      class="nav-close-btn"
+      aria-label="close menu"
+      data-nav-toggler
+    >
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+    <main>
+      <article>
+        <section class="section product" aria-label="product">
+          <div class="container">
+            <div class="product-slides">
+              <div class="slider-banner" data-slider>
+                <figure class="product-banner">
+                  <img
+                    src="/img/egzoz.png"
+                    style="width: 500px !important; height: 500px !important"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <figure class="product-banner">
+                  <img
+                    src="/img/cta-section-2.png"
+                    style="width: 500px !important; height: 500px !important"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <figure class="product-banner">
+                  <img
+                    src="/img/cta-section-2.png"
+                    style="width: 500px !important; height: 500px !important"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <!-- <figure class="product-banner">
+                                    <img src="/img/cta-section-2.png" style="width: 500px !important; height: 500px !important;"  loading="lazy"
+                                    class="img-cover"> 
+                                </figure> -->
+              </div>
+
+              <button
+                class="slide-btn prev"
+                aria-label="Previous image"
+                data-prev
+              >
+                <ion-icon name="chevron-back" aria-hidden="true"></ion-icon>
+              </button>
+
+              <button class="slide-btn next" aria-label="Next image" data-next>
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <div class="product-content">
+              <h1 class="h1 product-title">Ürün Başlığı</h1>
+
+              <p class="product-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, vel optio aspernatur accusantium, fugit
+              </p>
+
+              <div class="wrapper">
+                <span class="price" data-total-price>125.00 TL</span>
+              </div>
+
+              <div class="btn-group">
+                <div class="counter-wrapper">
+                  <button class="counter-btn" data-qty-minus>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </button>
+
+                  <span class="span" data-qty>1</span>
+
+                  <button class="counter-btn" data-qty-plus>
+                    <ion-icon name="add-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="cart-btn">
+                  Sepete Ekle
+                  <i style="font-size: 20px" class="fa fa-cart-arrow-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <div class="">
+      <h1 style="margin-left: 40px">Benzer Ürünler</h1>
+
+      <div
+        class="row sim"
+        style="margin-left: 40px; width: 80%; margin-bottom: 50px"
+      >
+        <div class="col-md-3 col-sm-3 similar">
+          <img style="width: 100%; height: 80%" src="/img/egzoz.png" />
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+
+        <div class="col-md-3 col-sm-3 similar">
+          <img style="width: 75%; height: 80%" src="/img/logo.png" />
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="col-md-3 col-sm-3 similar">
+          <img style="width: 100%; height: 80%" src="/img/egzoz.png" />
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="col-md-3 col-sm-3 similar">
+          <img style="width: 100%; height: 80%" src="/img/egzoz.png" />
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="col-md-3 col-sm-3 similar">
+          <img style="width: 100%; height: 80%" src="/img/egzoz.png" />
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="col-md-3 col-sm-3 similar">
+          <img style="width: 100%; height: 80%" src="/img/egzoz.png" />
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+      </div>
+    </div>
+
+    <%- include('../partials/footer') %>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(".sim").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+    </script>
+
+    <script src="/js/urun.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

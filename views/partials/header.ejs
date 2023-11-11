@@ -1,3 +1,52 @@
+<style>body {
+    font-family: Arial, sans-serif;
+}
+.cart-dropdown {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.cart-dropdown h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-dropdown li {
+    margin: 10px 0;
+}
+
+#close-cart {
+    display: block;
+    padding: 8px 15px;
+    background: #F68712;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#close-cart:hover {
+    background: #E66300;
+
+}</style>
+
 <header class="bg-white py-3 header-section">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div class="d-flex align-items-center mb-2 mb-md-0">
@@ -8,13 +57,22 @@
             <a href="/hakkimizda" class="mx-2 text-dark text-decoration-none header-section-nav-item">HAKKIMIZDA</a>
             <a href="/blog" class="mx-2 text-dark text-decoration-none header-section-nav-item">BLOG</a>
             <a href="/iletisim" class="mx-2 text-dark text-decoration-none header-section-nav-item">İLETİŞİM</a>
+            <a href="/urunler" class="mx-2 text-dark text-decoration-none header-section-nav-item">ÜRÜNLER</a>
         </nav>
         
         <div class="d-flex align-items-center header-section-right-elements">
             <span class="header-section-line mr-3"></span>
-            <a href="/giris" class="mx-2 text-dark text-decoration-none hover-orange header-section-nav-item">GİRİŞ YAP</a>
-            <a href="/kayit" class="mx-2 text-dark text-decoration-none header-section-nav-item">ÜYE OL</a>
-            <button class="btn header-section-btn ml-2 header-section-scale-hover header-section-nav-item"><i class="fa fa-shopping-cart"></i> SEPETİM</button>
+            <a href="/login" class="mx-2 text-dark text-decoration-none hover-orange header-section-nav-item">GİRİŞ YAP</a>
+            <a href="/signup" class="mx-2 text-dark text-decoration-none header-section-nav-item">ÜYE OL</a>
+            <button id="cart-button" class="btn header-section-btn ml-2 header-section-scale-hover header-section-nav-item"><i class="fa fa-shopping-cart"></i> SEPETİM</button>
+            <div id="cart-dropdown" class="cart-dropdown">
+                <h2>Sepet İçeriği</h2>
+                <ul id="cart-items">
+                    <!-- Sepet içeriği burada dinamik olarak görüntülenecek -->
+                </ul>
+                <p>Toplam Fiyat: <span id="total-price">0,00TRY</span></p>
+                <button id="close-cart" onclick="toggleCart()">Kapat</button>
+            </div>
         </div>
         
         <div class="mobile-nav d-flex justify-content-around align-items-center d-md-none">
@@ -24,6 +82,13 @@
             <a href="/giris"><i class="fa fa-sign-in-alt"></i></a>
             <a href="/kayit"><i class="fa fa-user-plus"></i></a>
             <button class="btn header-section-btn ml-2 header-section-scale-hover header-section-nav-item"><i class="fa fa-shopping-cart"></i></button>
+            <div id="cart-dropdown" class="cart-dropdown">
+                <!-- Sepet içeriği burada görüntülenecek -->
+            </div>
         </div>
     </div>
 </header>
+
+<script src="/js/add2Basket.js"></script>
+
+
